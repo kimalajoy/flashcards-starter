@@ -1,12 +1,11 @@
 const data = require('./data');
-const prototypeQuestions = data.prototypeData;
 
 class Deck {
   constructor(cards) {
     this.cards = cards;
   }
 
-  countCards(){
+  countCards() {
     return this.cards.length;
   }
 }

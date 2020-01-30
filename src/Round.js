@@ -9,36 +9,32 @@ class Round {
     this.deck = deck;
   }
 
-  returnCurrentCard(){
-    return this.deck.cards[0];
+  returnCurrentCard() {
+    return this.deck.cards[this.turnCount];
   }
 
   takeTurn(guess, card){
-    this.deck.cards.pop();
     this.guesses.push(guess);
+
     var turn = new Turn(guess, card);
 
-    if(!turn.evaluateGuess()){
+    if (!turn.evaluateGuess()){
       this.incorrectGuesses.push(card.id);
     }
-
     this.turnCount++;
-
     return turn.giveFeedback();
   }
 
   calculatePercentCorrect(){
     return 1 - (this.incorrectGuesses.length / this.guesses.length);
   }
+
+  endRound() {
+    var end = (`${(turn.giveFeedback)} + ${(this.calculatePercentCorrect)}`)
+    return end
+  }
+
 }
-
-
-
-
-
-
-
-
 
 
 module.exports = Round;

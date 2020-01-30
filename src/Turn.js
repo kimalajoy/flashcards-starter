@@ -14,7 +14,6 @@ class Turn {
   }
 
   evaluateGuess() {
-    console.log('card', this.card);
     return this.guess === this.card.correctAnswer;
   }
 
