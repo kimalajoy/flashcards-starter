@@ -10,57 +10,18 @@ const Game = require('../src/Game');
 describe('Game', function() {
 
   it('should keep track of the current round', function() {
-
     const game = new Game();
-    const round = new Round();
 
-    expect(game.currentRound).to.equal('');
+    expect(game.currentRound).to.equal(0);
   });
 
-  it.skip('should create card', function() {
-
+  it('should create cards', function() {
     const game = new Game();
-    const card = new Card();
 
-    expect().to.be.a('');
+    expect(game.createCards()).to.be.a('array');
+    expect(game.createCards().length).to.equal(30);
+    expect(typeof game.createCards()[0]).to.equal('object');
   });
-
-  it.skip('should put cards in a deck', function() {
-
-    const game = new Game();
-    const card = new Card();
-    const deck = new Deck();
-
-    expect().to.be.a('');
-  });
-
-  it.skip('should create a new round using the cards in a deck', function() {
-
-    const game = new Game();
-    const card = new Card();
-    const deck = new Deck();
-
-    expect().to.be.a('');
-  });
-
-  it.skip('should print the message about the end of the game', function() {
-
-    const game = new Game();
-    const round = new Round();
-
-    this.pringMessage()
-    expect().to.be.a('');
-  });
-
-  it.skip('should print the question', function() {
-
-    const game = new Game();
-    const round = new Round();
-
-    this.printQuestion()
-    expect().to.be.a('');
-  });
-
 
 
   });

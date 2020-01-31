@@ -13,10 +13,11 @@ class Round {
     return this.deck.cards[this.turnCount];
   }
 
-  takeTurn(guess, card){
-    this.guesses.push(guess);
+  takeTurn(userGuess){
+    this.guesses.push(userGuess);
 
-    var turn = new Turn(guess, card);
+    var card = this.returnCurrentCard();
+    var turn = new Turn(userGuess, card);
 
     if (!turn.evaluateGuess()){
       this.incorrectGuesses.push(card.id);
@@ -26,12 +27,15 @@ class Round {
   }
 
   calculatePercentCorrect(){
-    return 1 - (this.incorrectGuesses.length / this.guesses.length);
+    return 100*(1 - (this.incorrectGuesses.length / this.guesses.length));
   }
 
   endRound() {
-    var end = (`${(turn.giveFeedback)} + ${(this.calculatePercentCorrect)}`)
-    return end
+    var percentCorrect = this.calculatePercentCorrect();
+    var roundEndMessage = `‘** Round over! ** You answered ${percentCorrect}% of the questions correctly!`
+
+    console.log(roundEndMessage);
+    return roundEndMessage;
   }
 
 }
