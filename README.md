@@ -1,4 +1,24 @@
-# FlashCards Starter Kit
+# FlashCards Game
+
+## Project Overview:
+This project is a game where the user is given a set of flashcards with questions on them that appear in the console. The user is able to select one of the multiple choice answers and is then given feedback. This feedback will tell them if their answer was correct or incorrect. When the game ends, the user will receive feedback on the total percent of questions answered correctly and they will be notified that the game is over.
+
+## How to Play:
+To play the game, run the following code in your terminal:
+
+node index.js
+
+There will be prompted for each question where you will have to select an answer, and the feedback regarding your answer will show.
+
+Check out screenshots of the game below:
+
+![welcome to the game](https://user-images.githubusercontent.com/54754467/73511647-aaa6a680-43a3-11ea-97c7-75f429a16b81.png)
+![playing the game](https://user-images.githubusercontent.com/54754467/73511708-e8a3ca80-43a3-11ea-9447-aadd101c9c7c.png)
+
+
+
+
+
 
 ## Fork This Repo
 
