@@ -20,6 +20,13 @@ Check out screenshots of the game below:
 
 
 
+
+
+
+
+
+
+(from the original repo)
 ## Fork This Repo
 
 On the top right corner of this page, click the **Fork** button.
