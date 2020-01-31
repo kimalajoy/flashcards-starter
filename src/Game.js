@@ -21,9 +21,9 @@ class Game {
     this.currentRound = this.round.turnCount;
   }
 
-  createCards(){
+  createCards() {
     var cards = [];
-    for(var i = 0; i < prototypeQuestions.length; i++) {
+    for (var i = 0; i < prototypeQuestions.length; i++) {
       cards.push(new Card(prototypeQuestions[i]));
     }
 
@@ -36,7 +36,7 @@ class Game {
   }
 
   printQuestion() {
-      util.main(this.round);
+    util.main(this.round);
   }
 }
 
