@@ -10,8 +10,10 @@ node index.js
 
 There will be prompted for each question where you will have to select an answer, and the feedback regarding your answer will show.
 
+Check out screenshots of the game below:
 
-
+![welcome to the game](https://user-images.githubusercontent.com/54754467/73511647-aaa6a680-43a3-11ea-97c7-75f429a16b81.png)
+![playing the game](https://user-images.githubusercontent.com/54754467/73511708-e8a3ca80-43a3-11ea-9447-aadd101c9c7c.png)
 
 
 
