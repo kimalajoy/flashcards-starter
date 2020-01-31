@@ -1,4 +1,4 @@
-# FlashCards Starter Kit
+# FlashCards Game
 
 ## Project Overview:
 This project is a game where the user is given a set of flashcards with questions on them that appear in the console. The user is able to select one of the multiple choice answers and is then given feedback. This feedback will tell them if their answer was correct or incorrect. When the game ends, the user will receive feedback on the total percent of questions answered correctly and they will be notified that the game is over.
